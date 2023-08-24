@@ -15,7 +15,6 @@ namespace Ships.MVVM.Views
         public MainWindow()
         {
             InitializeComponent();
-       
         }
     }
 }
