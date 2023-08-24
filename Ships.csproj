@@ -145,6 +145,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MVVM\Models\ChangedSchedule.cs" />
+    <Compile Include="MVVM\Models\CollectionSchedule.cs" />
+    <Compile Include="MVVM\Models\Dock.cs" />
+    <Compile Include="MVVM\Models\Docks.cs" />
+    <Compile Include="MVVM\Models\Position.cs" />
+    <Compile Include="MVVM\Models\Route.cs" />
+    <Compile Include="MVVM\Models\Schedule.cs" />
+    <Compile Include="MVVM\Models\Ship.cs" />
+    <Compile Include="MVVM\Models\Ships.cs" />
+    <Compile Include="MVVM\Models\Timetable.cs" />
     <Compile Include="MVVM\Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -179,7 +189,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MVVM\Models\" />
     <Folder Include="MVVM\ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

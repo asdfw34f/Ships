@@ -8,9 +8,46 @@
         xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
         Title="MainWindow"
         Height="600"
-        Width="800">
+        Width="800"
+        WindowState="Maximized"
+        >
     <Grid>
-        <m:Map CredentialsProvider="QtGzhlnETSeoWBd5FUTQ~BO6Oj8_axweKEodm6LTnSg~AjofhpNlytGqd2m0yp6dZPaVQEYaNjVYLeIuDOktpwiwTIPEK0IplfO-X0s1pij1"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition  />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <ComboBox x:Name="fromBox" Margin="3, 3, 3, 0"
+                      FontSize="16"
+                      TextBoxBase.TextChanged="ComboBox_TextChanged"
+                      IsTextSearchEnabled="False"
+                      IsEditable="True">
+            </ComboBox>
+            <Label Content="Причал отбытия"
+            Margin="0"
+                   FontSize="12"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center" />
+            <ComboBox Margin="3, 0, 3, 0"
+                      FontSize="16">
+                <ComboBoxItem></ComboBoxItem>
+                <TextBox></TextBox>
+            </ComboBox>
+            <Label Content="Причал прибытия"
+                   FontSize="12"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center" />
+        </StackPanel>
 
+        <m:Map x:Name="meMap"
+               Grid.Column="1"
+               CredentialsProvider="QtGzhlnETSeoWBd5FUTQ~BO6Oj8_axweKEodm6LTnSg~AjofhpNlytGqd2m0yp6dZPaVQEYaNjVYLeIuDOktpwiwTIPEK0IplfO-X0s1pij1"
+               Center="55.753995, 37.614069"
+               ZoomLevel="11">
+            <m:MapPolyline Stroke="Blue"
+                           StrokeThickness="5"
+                           Locations="47.6424,-122.3219 47.8424,-122.1747 47.5814,-122.1747 47.67856,-122.130994"
+                           Opacity="0.7" />
+        </m:Map>
     </Grid>
 </Window>
