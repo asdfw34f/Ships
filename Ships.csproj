@@ -107,6 +107,7 @@
     <Reference Include="Microsoft.Net.Http.Headers, Version=2.2.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Net.Http.Headers.2.2.8\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1988.0, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Web.WebView2.1.0.1988-prerelease\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
     </Reference>
@@ -173,16 +174,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MVVM\Models\ChangedSchedule.cs" />
-    <Compile Include="MVVM\Models\CollectionSchedule.cs" />
-    <Compile Include="MVVM\Models\Dock.cs" />
-    <Compile Include="MVVM\Models\Docks.cs" />
-    <Compile Include="MVVM\Models\Position.cs" />
-    <Compile Include="MVVM\Models\Route.cs" />
-    <Compile Include="MVVM\Models\Schedule.cs" />
-    <Compile Include="MVVM\Models\Ship.cs" />
-    <Compile Include="MVVM\Models\Ships.cs" />
-    <Compile Include="MVVM\Models\Timetable.cs" />
+    <Compile Include="Infrastructure\CSVParse.cs" />
     <Compile Include="MVVM\Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -219,6 +211,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="MVVM\Models\" />
     <Folder Include="MVVM\ViewModels\" />
   </ItemGroup>
   <ItemGroup>

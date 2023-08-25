@@ -44,10 +44,11 @@
                CredentialsProvider="QtGzhlnETSeoWBd5FUTQ~BO6Oj8_axweKEodm6LTnSg~AjofhpNlytGqd2m0yp6dZPaVQEYaNjVYLeIuDOktpwiwTIPEK0IplfO-X0s1pij1"
                Center="55.753995, 37.614069"
                ZoomLevel="11">
-            <m:MapPolyline Stroke="Blue"
+            <!-- <m:MapPolyline Stroke="Blue"
                            StrokeThickness="5"
                            Locations="47.6424,-122.3219 47.8424,-122.1747 47.5814,-122.1747 47.67856,-122.130994"
-                           Opacity="0.7" />
-        </m:Map>
+                           Opacity="0.7" /> !>
+        !-->
+            </m:Map>
     </Grid>
 </Window>
