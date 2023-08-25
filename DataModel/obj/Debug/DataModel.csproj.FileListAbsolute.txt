@@ -1,0 +1,9 @@
+D:\PROJECTS\Ex\DataModel\bin\Debug\DataModel.dll
+D:\PROJECTS\Ex\DataModel\bin\Debug\DataModel.pdb
+D:\PROJECTS\Ex\DataModel\obj\Debug\DataModel.csproj.AssemblyReference.cache
+D:\PROJECTS\Ex\DataModel\obj\Debug\DataModel.csproj.CoreCompileInputs.cache
+D:\PROJECTS\Ex\DataModel\obj\Debug\DataModel.dll
+D:\PROJECTS\Ex\DataModel\obj\Debug\DataModel.pdb
+D:\PROJECTS\Ex\DataModel\bin\Debug\FileHelpers.dll
+D:\PROJECTS\Ex\DataModel\bin\Debug\FileHelpers.xml
+D:\PROJECTS\Ex\DataModel\obj\Debug\DataModel.csproj.CopyComplete
